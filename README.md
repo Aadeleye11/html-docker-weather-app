@@ -49,5 +49,28 @@ Refresh the page multiple times
 
 Confirm the responses alternate between Web01 and Web02 (check the app logs or subtle UI differences if available)
 
-## 6. Summary
+## 6. APIs and Credits
+
+### APIs Used
+- **OpenWeather API** for weather data  
+  Official docs: [https://openweathermap.org/api](https://openweathermap.org/api)
+
+### Challenges Faced
+- Handling asynchronous API calls in JavaScript for smooth UI updates  
+- Ensuring CORS was properly configured to avoid cross-origin errors  
+- Managing API key security by using environment variables instead of hardcoding
+
+### How I Overcame Them
+- Used `fetch` with async/await patterns to manage API calls cleanly  
+- Leveraged CORS proxies during development and configured backend appropriately  
+- Kept API keys in environment variables and never committed them to the repo
+
+### Credits
+- Thanks to OpenWeather for providing a robust free API  
+- Used Nginx as a lightweight web server inside the Docker container  
+- Inspired by tutorials from [insert any blog or video resource you used]
+
+
+
+## 7. Summary
 This README lets anyone build, deploy, load balance, and test my app just like I did.
